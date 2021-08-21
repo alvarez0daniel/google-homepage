@@ -1,0 +1,113 @@
+/* global styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-primary);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+/* custom properties */
+:root {
+  --ff-primary: arial, sans-serif;
+
+  --fs-primary: 14px;
+  --fs-input: 16pt;
+
+  --clr-primary: #222;
+  --clr-secondary: #70757a;
+  --clr-bg: #fff;
+  --clr-accent: #dfe1e5;
+}
+
+.logo-container {
+  margin: 20px 0;
+}
+.google-logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.searchbar-container {
+  background: var(--clr-bg);
+  display: flex;
+  align-items: center;
+  justify-content:baseline;
+  max-width: 584px;
+  border: 1px solid var(--clr-accent);
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 20px;
+  }
+
+  .microphone-icon {
+  background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+  background-size: auto;
+  margin: 10px;
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+  }
+
+  .search-icon-container {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill: var(--clr-secondary);
+  }
+
+  .search-field {
+    border: none;
+    flex: 1;
+    font-size: var(--fs-input);
+    line-height: 34px;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .button-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .submit-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: var(--clr-primary);
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
