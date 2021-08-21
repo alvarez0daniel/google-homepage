@@ -60,7 +60,13 @@ main {
   border: 1px solid var(--clr-accent);
   border-radius: 24px;
   height: 44px;
-  margin: 0 20px;
+  margin: 0 auto;
+  }
+
+  .searchbar-container:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
   }
 
   .microphone-icon {
@@ -110,4 +116,28 @@ main {
     text-align: center;
     cursor: pointer;
     user-select: none;
+  }
+
+  header {
+    display: flex;
+    height: 48px;
+
+    text-decoration: none;
+    color: var(--clr-primary);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+
+  .header-link {
+    flex-grow: 0;
+  }
+
+  .links-container {
+    flex-basis: 100%;
+    flex-grow: 1;
   }
