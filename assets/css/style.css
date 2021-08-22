@@ -63,8 +63,8 @@ main {
   margin: 0 auto;
   }
 
-  .searchbar-container:hover {
-    background-color: #fff;
+  .searchbar-container:hover,
+  .submit-button:hover {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
   }
@@ -120,12 +120,13 @@ main {
 
   header {
     display: flex;
-    height: 48px;
-
-    text-decoration: none;
-    color: var(--clr-primary);
-    justify-content: space-between;
     align-items: center;
+    height: 60px;
+    width: 100%;
+    
+    padding: 6px;
+    
+    flex-shrink: 0;
   }
 
   a {
@@ -134,10 +135,32 @@ main {
   }
 
   .header-link {
-    flex-grow: 0;
+    margin-left: 15px;
+
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    align-self: center;
   }
 
   .links-container {
+    display: flex;
     flex-basis: 100%;
     flex-grow: 1;
+    justify-content: right;
+    
+  }
+
+  .hamburger{
+    width: 40px;
+    height: 40px;
+    fill: var(--clr-secondary);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .profile-link {
+    border-radius: 100%;
   }
