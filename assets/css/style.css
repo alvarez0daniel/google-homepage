@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* custom properties */
 
 :root {
@@ -15,16 +20,32 @@
 }
 
 /* layout */
+.page,
+.container,
 header,
+.content--main,
 .links-container,
 .icon {
   display: flex;
+}
+
+.page--default,
+.content--main,
+.form--default {
+  flex-direction: column;
 }
 
 header {
   justify-content: space-evenly;
 }
 
+.content--main,
+.logo-sect--default {
+  justify-content: center;
+}
+
+.content--main,
+.form--default,
 .links-container {
   align-items: center;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Google Homepage</title>
   </head>
-  <body>
+  <body class="page page--default">
     <header class="header--main">
       <div class="links-container header-links--left">
         <a href="#" class="about-link link--default">About</a>
@@ -34,7 +34,26 @@
         /></a>
       </div>
     </header>
-    <main class="content--main"></main>
+    <main class="content--main">
+      <div class="container logo-sect--default">
+        <img
+          src="/assets/images/google-logo.png"
+          alt="Google"
+          class="logo hero-logo--google"
+        />
+      </div>
+      <form action="#" class="container form--default">
+        <div class="container input-sect--default">
+          <input type="text" name="search" id="search" />
+        </div>
+        <div class="container btn-sect--default">
+          <button type="submit" class="btn btn--default">Google Search</button>
+          <button type="submit" class="btn btn--default">
+            I'm Feeling Lucky
+          </button>
+        </div>
+      </form>
+    </main>
     <footer class="footer--main"></footer>
   </body>
 </html>
