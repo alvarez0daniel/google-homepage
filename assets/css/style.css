@@ -52,10 +52,30 @@ header {
 .content--main,
 .form--default,
 .links-container,
+.footer-links,
+.link--carbon,
 .input-sect--default,
 .icon--apps {
   align-items: center;
 }
+
+.footer--default {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links--left {
+  order: 1;
+}
+
+.footer-links--middle {
+  order: 2;
+}
+
+.footer-links--right {
+  order: 3;
+}
+
 
 .header-links--left {
   justify-content: flex-start;
@@ -123,6 +143,10 @@ header {
 .icon--search {
   width: 20px;
   height: 20px;
+}
+
+.icon--leaf {
+  width: 14px;
 }
 
 .icon--profile,
@@ -210,4 +234,13 @@ body {
 
 .link--default:hover {
   text-decoration: underline;
+}
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+  .footer-links--middle {
+    order: 0;
+    width: 100%;
+    justify-content: center;
+  }
 }
