@@ -20,9 +20,10 @@ body {
 }
 
 /* layout */
+header,
 .page,
 .container,
-header,
+.wrapper,
 .content--main,
 .links-container,
 .icon {
@@ -30,6 +31,7 @@ header,
 }
 
 .page--default,
+.wrapper,
 .content--main,
 .form--default {
   flex-direction: column;
@@ -40,13 +42,18 @@ header {
 }
 
 .content--main,
-.logo-sect--default {
+.wrapper,
+.logo-sect--default,
+.input-sect--default,
+.btn-sect--default {
   justify-content: center;
 }
 
 .content--main,
 .form--default,
-.links-container {
+.links-container,
+.input-sect--default,
+.icon--apps {
   align-items: center;
 }
 
@@ -54,16 +61,28 @@ header {
   justify-content: flex-start;
 }
 
-.header-links--right {
+.header-links--right,
+.input--search {
   justify-content: flex-end;
   flex-grow: 1;
 }
 
-.icon--apps {
-  align-items: center;
+/* box model */
+.form--default,
+.input-sect--default,
+.btn-sect--default {
+  width: 100%;
 }
 
-/* box model */
+.form--default {
+  padding: 20px;
+}
+
+.btn-sect--default {
+  height: 70px;
+  padding-top: 18px;
+}
+
 .header-links--left {
   width: auto;
 }
@@ -78,11 +97,20 @@ header {
   padding: 5px;
 }
 
-.about-link {
+.hero-logo--google {
+  padding-top: 109px;
+}
+
+.about-link,
+.icon--search {
   margin-left: 15px;
 }
 
-.icon {
+.wrapper--icon {
+  padding-right: 13px;
+}
+
+.icon--profile {
   width: 32px;
   height: 32px;
 }
@@ -92,8 +120,26 @@ header {
   height: 24px;
 }
 
-.icon--profile {
+.icon--search {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--profile,
+.apps-link:hover {
   border-radius: 100%;
+}
+
+.input-sect--default {
+  max-width: 584px;
+}
+
+.btn {
+  min-width: 54px;
+  height: 36px;
+  margin: 11px 4px;
+  border-radius: 4px;
+  padding: 0 16px;
 }
 
 /* fill and background */
@@ -101,9 +147,41 @@ header {
   fill: #5f6368;
 }
 
+.apps-link:hover {
+  background-color: #eff0f0 ;
+}
+
+.input-sect--default {
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+.input-sect--default:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.input--search {
+  border: none;
+}
+
+.input--search:focus{
+  outline: none;
+}
+
+.icon--search {
+  fill: #9aa0a6;
+}
+
 /* typography */
 body {
   font-family: var(--ff-primary);
+}
+
+.btn {
+  font-size: 14px;
+  color: #202124
 }
 
 .links-container {
