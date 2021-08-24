@@ -60,7 +60,7 @@ header {
 }
 
 .footer--default {
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -87,6 +87,11 @@ header {
   flex-grow: 1;
 }
 
+.content--main {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
 /* box model */
 .form--default,
 .input-sect--default,
@@ -97,6 +102,12 @@ header {
 .form--default {
   padding: 20px;
 }
+
+.footer--default {
+  padding: 0 20px;
+}
+
+
 
 .btn-sect--default {
   height: 70px;
@@ -118,7 +129,7 @@ header {
 }
 
 .hero-logo--google {
-  padding-top: 109px;
+  padding-top: 10px;
 }
 
 .about-link,
@@ -178,6 +189,9 @@ header {
 }
 
 /* fill and background */
+.footer--default {
+  background-color: #f2f2f2;
+}
 .icon--apps {
   fill: #5f6368;
 }
@@ -208,6 +222,10 @@ header {
   fill: #9aa0a6;
 }
 
+.footer-link {
+  padding: 15px;
+}
+
 /* typography */
 body {
   font-family: var(--ff-primary);
@@ -229,14 +247,17 @@ body {
   font-size: 14px;;
 }
 
-.link--default:visited {
-  color: var(--clr-primary);
-}
-
 .link--default:hover {
   text-decoration: underline;
 }
 
+.link--gray {
+  color: #70757a;
+}
+
+.link--default:visited {
+  color: #70757a;
+}
 /* media queries */
 @media only screen and (max-width: 1200px) {
   .footer-links--middle {
