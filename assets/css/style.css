@@ -59,7 +59,7 @@ header {
   align-items: center;
 }
 
-.footer--default {
+.footer--main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -103,7 +103,7 @@ header {
   padding: 20px;
 }
 
-.footer--default {
+.footer--main {
   padding: 0 20px;
 }
 
@@ -189,7 +189,7 @@ header {
 }
 
 /* fill and background */
-.footer--default {
+.footer--main {
   background-color: #f2f2f2;
 }
 .icon--apps {
