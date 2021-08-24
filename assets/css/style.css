@@ -131,7 +131,9 @@ header {
 }
 
 .input-sect--default {
+  height: 44px;
   max-width: 584px;
+  padding: 3px;
 }
 
 .btn {
@@ -152,7 +154,6 @@ header {
 }
 
 .input-sect--default {
-  height: 44px;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
 }
